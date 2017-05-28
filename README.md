@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/swissquote/carnotzet-extension-reverse-proxy.svg?branch=master)](https://travis-ci.org/swissquote/carnotzet-extension-reverse-proxy)
+
 #Automatically add and configure a reverse proxy in your carnotzet environments
 
 Adds an nginx reverse proxy container in your environment, with automatically generated configuration 

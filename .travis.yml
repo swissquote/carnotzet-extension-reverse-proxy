@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - mvn clean install -B -V
