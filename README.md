@@ -1,13 +1,13 @@
 [![Build Status](https://travis-ci.org/swissquote/carnotzet-extension-reverse-proxy.svg?branch=master)](https://travis-ci.org/swissquote/carnotzet-extension-reverse-proxy)
 
-#Automatically add and configure a reverse proxy in your carnotzet environments
+# Automatically add and configure a reverse proxy in your carnotzet environments
 
 Adds an nginx reverse proxy container in your environment, with automatically generated configuration 
-to forward http requests to all other webapps in the environment
+to forward http requests to all other webapps in the envirvonment
 
 This allows you to avoid cross-domain limitations in browsers.
 
-##Usage
+## Usage
 ```
 <dependency>
 	<groupId>com.github.swissquote</groupId>
@@ -16,10 +16,10 @@ This allows you to avoid cross-domain limitations in browsers.
 </dependency>
 ```
 
-###Java
+### Java
 register a ReverseProxyExtension object in your CarnotzetConfig ([Carnotzet documentation](https://swissquote.github.io/carnotzet/user-guide/java-api) for details)
 
-###Maven
+### Maven
 ```
 <plugin>
 	<groupId>com.github.swissquote</groupId>
@@ -42,20 +42,20 @@ register a ReverseProxyExtension object in your CarnotzetConfig ([Carnotzet docu
 </plugin>
 ```
 
-##Configuration
+## Configuration
 
-###Docker image
+### Docker image
 By default, the latest nginx official docker image will be used as reverse proxy.
 You can override this by using the appropriate constructor when building your ReverseProxyExtension.
 When configuring through the maven plugin, you may use the nginx.image property.
 
-###Context path
+### Context path
 By default, the module name is used as contextPath.
 you can override the contextPath of each webapp in their respective carnotzet.properties file.
 ```
 http.context.path=/custom-context
 ```
-###Port
+### Port
 By default, the reverse proxy forwards requests to port 80 of each container.
  you can override the contextPath of each webapp in their respective carnotzet.properties file.
  ```
