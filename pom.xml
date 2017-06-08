@@ -48,7 +48,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<carnotzet.version>1.0.1-SNAPSHOT</carnotzet.version>
+		<carnotzet.version>1.1.0</carnotzet.version>
 	</properties>
 
 	<modules>

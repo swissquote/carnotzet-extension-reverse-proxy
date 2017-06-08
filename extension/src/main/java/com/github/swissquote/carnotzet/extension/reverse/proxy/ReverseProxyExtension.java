@@ -43,8 +43,6 @@ public class ReverseProxyExtension implements CarnotzetExtension {
 				.name("reverse-proxy")
 				.imageName(nginxImage)
 				.dockerVolumes(volumes)
-				.topLevelModuleName(carnotzet.getTopLevelModuleName())
-				.properties(new HashMap<>())
 				.build();
 
 		List<CarnotzetModule> modules = new ArrayList<>();
